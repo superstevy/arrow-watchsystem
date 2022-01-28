@@ -4,7 +4,7 @@
 
 **This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
 
-Check out [LIVE DEMO](https://techis-assess-web-react-arrow.herokuapp.com/) here!!
+Check out [LIVE DEMO](https://arrow-watchsystem.herokuapp.com/) here!!
 
 ## Tech used
 

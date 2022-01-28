@@ -17,7 +17,7 @@ Check out [LIVE DEMO](https://arrow-watchsystem.herokuapp.com/) here!!
 1. Git Clone
 
 ```
-git clone git@github.com:Tech-i-s/techis-assess-web-react-arrow.git
+git clone https://github.com/superstevy/arrow-watchsystem.git
 ```
 
 3. Application setting

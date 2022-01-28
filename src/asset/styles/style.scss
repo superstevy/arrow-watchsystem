@@ -1,0 +1,361 @@
+/***************************
+* Style Sheet for every page
+***************************/
+
+$base-color: black;
+$base-text-color: black;
+$white-color: white;
+$gray-in-black-color: #919191;
+$gray-bright-in-black-color: #91919154;
+$gray-bg: #f6f6f5;
+$gray-in-white-color: #7c7c7c;
+$blue-color: #004494;
+$box-shadow-color: rgba(39, 39, 39, 0.459);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+
+  .back {
+    color: $base-text-color;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  header {
+    background-color: $base-color;
+    padding: 30px 20px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .home-page {
+    h2 {
+      border-left: 8px solid $blue-color;
+      padding-left: 20px;
+      font-size: 30px;
+    }
+
+    .main {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .show-info {
+        width: 500px;
+        position: absolute;
+        top: 10%;
+        right: 130px;
+        color: $white-color;
+        h1 {
+          font-size: 70px;
+          margin: 10px 0;
+        }
+
+        p.tags {
+          border-top: 1px solid $gray-bright-in-black-color;
+          border-bottom: 1px solid $gray-bright-in-black-color;
+          padding: 20px 0;
+        }
+
+        p.description {
+          font-size: 11px;
+        }
+
+        p {
+          color: $gray-in-black-color;
+        }
+      }
+
+      &__pc-image {
+        display: block;
+      }
+
+      &__sp-image {
+        display: none;
+      }
+    }
+
+    .episode-list {
+      padding: 5% 10%;
+      .subtitle-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+          background-color: $blue-color;
+          color: $white-color;
+          padding: 18px 40px;
+          font-size: 17px;
+          border: 0px;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+
+      .episode-card-list {
+        display: flex;
+        justify-content: space-between;
+
+        .episode-card {
+          width: 43%;
+          box-shadow: 5px 2px 13px rgb(108 108 108 / 46%);
+          padding: 3%;
+          margin: 1%;
+          border-radius: 12px;
+
+          .top-rated {
+            font-size: 15px;
+            font-weight: bold;
+            color: $white-color;
+            background-color: $blue-color;
+            padding: 5px 16px 5px 9px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            max-width: 200px;
+          }
+          .date {
+            color: $gray-in-white-color;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 8px;
+          }
+          .title {
+            color: $base-text-color;
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+
+    .cast-list {
+      padding: 5% 10%;
+      .subtitle-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+          background-color: $blue-color;
+          color: $white-color;
+          padding: 18px 40px;
+          font-size: 17px;
+          border: 0px;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+
+      .cast-card-list {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+
+        .cast-card {
+          width: 41%;
+          padding: 3%;
+          margin: 1%;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          img {
+            width: 40%;
+            object-fit: cover;
+            max-height: 250px;
+            border-radius: 10px;
+            margin-right: 19px;
+          }
+          .card-info {
+            width: 40%;
+            .person-name {
+              font-size: 18px;
+              text-decoration: none;
+              font-weight: bold;
+              color: $base-text-color;
+            }
+            .character-name {
+              text-decoration: none;
+              color: $gray-in-white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .episodes-page {
+    padding: 5% 10%;
+
+    .subtitle-area {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $gray-in-white-color;
+    }
+
+    .episode-card-list {
+      .episode-card {
+        background-color: $gray-bg;
+        padding: 3%;
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 30%;
+        }
+        .episode-info {
+          width: 67%;
+          margin-left: 3%;
+
+          .title {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          .date {
+            font-size: 15px;
+            color: $gray-in-white-color;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .cast-page {
+    padding: 5% 10%;
+
+    .cast-info {
+      display: flex;
+      align-items: flex-start;
+
+      img {
+        width: 35%;
+      }
+      table {
+        width: 60%;
+        margin-left: 5%;
+        border-collapse: collapse;
+
+        td,
+        th {
+          border: 1px solid $gray-bright-in-black-color;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $base-color;
+    padding: 50px 0;
+    margin-top: 50px;
+
+    p {
+      width: 100%;
+      text-align: center;
+      color: $white-color;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    .home-page {
+      h2 {
+        font-size: 30px;
+      }
+      .main {
+        &__pc-image {
+          display: none;
+        }
+
+        &__sp-image {
+          display: block;
+        }
+
+        .show-info {
+          width: 80%;
+          padding: 5% 10%;
+          position: unset;
+          background-color: $base-color;
+
+          h1 {
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+      .episode-list {
+        padding: 5% 5%;
+
+        .subtitle-area {
+          .button {
+            padding: 14px 12px;
+            font-size: 13px;
+            border-radius: 3px;
+          }
+        }
+        .episode-card-list {
+          display: block;
+
+          .episode-card {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .cast-list {
+        .subtitle-area {
+          .button {
+            padding: 14px 12px;
+            font-size: 13px;
+            border-radius: 3px;
+          }
+        }
+
+        .cast-card-list {
+          display: block;
+
+          .cast-card {
+            width: 90%;
+            margin-bottom: 20px;
+            .card-info {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .episodes-page {
+      padding: 5% 10%;
+      .episode-card-list {
+        .episode-card {
+          width: 95%;
+          display: block;
+          img {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+          .episode-info {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/***************************
+* Switch Input Desing 
+* Refered: https://codepen.io/Ciwan/pen/NaQWQa
+***************************/
+
+.sort {
+  border-radius: 5px;
+
+  .alphabetical-sort-switch {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+
+    input {
+      display: none;
+
+      &:checked + .slider {
+        background-color: #2186da;
+        direction: rtl;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 18px;
+
+        &:before {
+          transform: translateX(123px);
+        }
+      }
+
+      &:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      padding-right: 18px;
+      text-align: right;
+      line-height: 34px;
+      font-weight: bold;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      &.round {
+        border-radius: 34px;
+
+        &:before {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
